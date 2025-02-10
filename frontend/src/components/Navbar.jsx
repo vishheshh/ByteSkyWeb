@@ -4,7 +4,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { MdOutlineNotifications, MdOutlinePerson } from "react-icons/md";
 import { motion } from "framer-motion";
 
-const Navbar = () => {
+export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
@@ -42,10 +42,10 @@ const Navbar = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="w-32 h-fit border-2 border-[#B0B0B0] rounded-3xl dp"
+          className="w-32 h-fit rounded-3xl dp"
         >
           <img
-            src="../../public/logo.png"
+            src="./logo.png"
             alt="Logo"
             className="w-full h-full object-contain"
           />
@@ -157,5 +157,3 @@ const Navbar = () => {
     </>
   );
 };
-
-export default Navbar;
