@@ -1,7 +1,7 @@
 import { FaLinkedin } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion"
-
+import React from "react";
 export const LeadershipCard = ({ name, role, delay }) => {
     const [ref, inView] = useInView({
       triggerOnce: true, // Trigger animation only once

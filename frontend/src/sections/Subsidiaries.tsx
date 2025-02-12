@@ -1,6 +1,7 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import SubsidiaryCard from "../components/SubsidiaryCard";
+import React from "react";
 
 export function Subsidiaries() {
     const [sectionRef, sectionInView] = useInView({

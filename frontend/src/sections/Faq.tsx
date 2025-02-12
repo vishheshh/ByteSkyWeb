@@ -1,5 +1,6 @@
 import { faqData } from "../constants/home.constants";
 import { FAQItem } from "../components/FAQItem";
+import React from "react";
 
 export const FAQ = () => {
     return (

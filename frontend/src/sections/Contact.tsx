@@ -1,5 +1,6 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { contactDetails } from "../constants/home.constants";
+import React from "react";
 
 export const Contact = () => {
     const { scrollYProgress } = useScroll();

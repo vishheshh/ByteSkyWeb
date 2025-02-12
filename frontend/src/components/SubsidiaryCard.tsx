@@ -1,6 +1,6 @@
 import { motion} from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
+import React from "react";
 export default function SubsidiaryCard({ title, description, delay }) {
     const [ref, inView] = useInView({
       triggerOnce: true, // Trigger animation only once

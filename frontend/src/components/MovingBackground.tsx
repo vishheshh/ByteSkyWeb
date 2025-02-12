@@ -1,5 +1,5 @@
 import { useScroll, useTransform , motion } from "framer-motion";
-
+import React from "react";
 
 export default function MovingBackground() {
     const { scrollY } = useScroll();
