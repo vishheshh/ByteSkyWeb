@@ -14,7 +14,7 @@ export function Subsidiaries() {
         <div className="container mx-auto px-4">
           <motion.h2
             ref={sectionRef}
-            className="text-5xl font-bodoni font-bold text-center mb-16"
+            className="text-5xl  font-bold text-center mb-16"
             initial={{ opacity: 0, y: -20 }}
             animate={sectionInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}

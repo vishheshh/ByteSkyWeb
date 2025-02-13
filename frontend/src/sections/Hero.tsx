@@ -20,12 +20,12 @@ export function Hero() {
           className="text-center px-4 my-20"
         >
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="text-[5rem]  font-bold mb-4 text-gray-800 font-bodoni"
+            transition={{ duration: 1 , delay: .3}}
+            className="text-[5rem] mb-4 text-black font-semibold font-inter"
           >
-            <Typewriter
+            {/* <Typewriter
               options={{
                 strings: ["Bytesky Group"],
                 autoStart: true,
@@ -33,14 +33,15 @@ export function Hero() {
                 cursor: "",
                 deleteSpeed: 999999999,
               }}
-            />
+            /> */}
+            Bytesky Group
           </motion.div>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.5 }}
-            className="text-3xl text-gray-600 -mt-6 font-serif italic"
+            transition={{ duration: 1, delay: 1.2 }}
+            className="text-3xl text-gray-600 -mt-6 "
           >
             Innovating Tomorrow, Today
           </motion.p>
@@ -71,7 +72,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          style={{ opacity: useTransform(scrollY, [0, 300], [1, 0]) }}
+          style={{ opacity: useTransform(scrollY, [0, 800], [1, 0]) }}
           className="bg-white shadow-lg rounded-3xl w-full sm:w-1/4  h-[50vh] flex items-center justify-center text-center p-6 transition-transform bg-opacity-70 dp"
         >
           Left card content goes here.
@@ -81,7 +82,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: -20 }}
           transition={{ duration: 1, delay: 0.7 }}
-          style={{ opacity: useTransform(scrollY, [0, 300], [1, 0]) }}
+          style={{ opacity: useTransform(scrollY, [0, 800], [1, 0]) }}
           className="bg-white shadow-lg rounded-3xl w-full sm:w-1/4  h-[60vh] flex items-center justify-center text-center p-6 transition-transform bg-opacity-70 dp"
         >
           Middle card content goes here.
@@ -91,7 +92,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.9 }}
-          style={{ opacity: useTransform(scrollY, [0, 300], [1, 0]) }}
+          style={{ opacity: useTransform(scrollY, [0, 800], [1, 0]) }}
           className="bg-white shadow-lg rounded-3xl w-full sm:w-1/4  h-[50vh] flex items-center justify-center text-center p-6 transition-transform bg-opacity-70 dp2"
         >
           Right card content goes here.

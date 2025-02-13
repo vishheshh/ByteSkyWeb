@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Homepage = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden font-inter">
       <Hero />
       <AboutSection />
       <Subsidiaries />

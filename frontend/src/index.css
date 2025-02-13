@@ -1,22 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Merriweather&family=Poppins&family=Roboto&family=Rubik:wght@400;500&family=Salsa&display=swap&family=Inter:wght@500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'bodoni'; /* Replace with your font's name */
-  src: url('./assets/fonts/bodoni/BodoniFLF-Bold.ttf') format('truetype'),
-    url('./assets/fonts/bodoni/BodoniFLF-BoldItalic.ttf') format('truetype'),
-    url('./assets/fonts/bodoni/BodoniFLF-Italic.ttf') format('truetype'),
-    url('./fonts/bodoni/BodoniFLF-Roman.ttf') format('truetype');
-  font-weight: normal; /* Adjust if the font has specific weights */
-  font-style: normal; /* Adjust if the font has italic or oblique styles */
-}
-@font-face {
-  font-family: 'playball';
-  src: url('./assets/fonts/playball/Playball.ttf') format('truetype');
-  font-weight: normal; /* Adjust if the font has specific weights */
-  font-style: normal;
-}
 .dp{
   transition: transform 0.5s ease-in-out;
 }
@@ -30,4 +16,9 @@
 .dp:hover {
   transform: translate(-2px, -2px);
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

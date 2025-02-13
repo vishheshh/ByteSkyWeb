@@ -35,7 +35,7 @@ export function AboutSection() {
           animate={headerInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-6xl font-bodoni font-bold mb-4">About Us</h2>
+          <h2 className="text-6xl  font-semibold mb-4">About Us</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Discover how ByteSky Group is revolutionizing technology across
             multiple sectors
@@ -74,7 +74,7 @@ export function AboutSection() {
               animate={graphInView1 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h3 className="text-4xl font-bold mb-4 text-[#BEDBE9] font-bodoni">
+              <h3 className="text-4xl font-bold mb-4 text-neutral-80 ">
                 AI Technology Impact
               </h3>
               <p className="text-gray-600 mb-4">
@@ -107,7 +107,7 @@ export function AboutSection() {
               animate={graphInView2 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h3 className="text-4xl font-bodoni font-bold mb-4 text-[#BEDBE9]">
+              <h3 className="text-4xl text-neutral-80 font-bold mb-4 ">
                 Healthcare Innovation Metrics
               </h3>
               <p className="text-gray-600 mb-4">
@@ -163,7 +163,7 @@ export function AboutSection() {
               animate={graphInView3 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h3 className="text-4xl font-bodoni font-bold mb-4 text-[#BEDBE9]">
+              <h3 className="text-4xl  font-bold mb-4 text-neutral-80">
                 Educational Impact Analysis
               </h3>
               <p className="text-gray-600 mb-4">

@@ -15,7 +15,7 @@ export default function SubsidiaryCard({ title, description, delay }) {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, delay }}
       >
-        <h3 className="text-4xl text-center font-bodoni font-bold mb-4 text-[#1E3A8A]">{title}</h3>
+        <h3 className="text-2xl font-semibold text-center   mb-4 text-[#1E3A8A]">{title}</h3>
         <p className="text-gray-600">{description}</p>
       </motion.div>
     );

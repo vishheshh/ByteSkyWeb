@@ -25,7 +25,7 @@ export const Contact = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 font-bodoni tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800  tracking-tight">
               Connect With Us
             </h2>
             <p className="text-gray-600 mt-4 text-lg max-w-2xl mx-auto">

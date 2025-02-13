@@ -36,13 +36,13 @@ export default function Navbar() {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="w-full mt-3 flex h-auto items-center justify-between px-6 py-4 rounded-t-3xl"
+        className="w-full flex h-auto items-center justify-between px-6 py-4 rounded-t-3xl"
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="w-32 h-fit rounded-3xl dp"
+          className="w-48 center h-fit rounded-3xl "
         >
           <img
             src="./logo.png"
@@ -52,64 +52,64 @@ export default function Navbar() {
         </motion.div>
 
         <div className="flex gap-4">
-          <div className="hidden md:flex items-center space-x-1 bg-gray-100 rounded-3xl shadow-md gap-4">
+          <div className="hidden md:flex items-center space-x-1  rounded-3xl  gap-2">
             {menuItems.map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 * index }}
+                transition={{ duration: 0.6 }}
               >
                 <button
                   onClick={() => handleScrollToSection(item.id)}
-                  className="text-lg transition-colors duration-300 px-4 py-4 rounded-3xl hover:bg-blue-100 font-semibold dp"
+                  className="text-base hover:text-neutral-80   px-4 py-4 rounded-3xl"
                 >
                   {item.name}
                 </button>
               </motion.div>
             ))}
           </div>
+        </div>
 
-          <div className="flex items-center gap-2">
-            <motion.button
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="hidden md:flex items-center bg-gray-100 rounded-3xl px-4 shadow-md dp hover:bg-blue-100"
-            >
-              <IoSettingsOutline className="text-lg" />
-              <span className="py-4 px-2 font-semibold">Settings</span>
-            </motion.button>
+        <div className="flex items-center gap-2 w-32">
+          {/* <motion.button
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="hidden md:flex items-center  rounded-3xl px-4 shadow-md  "
+          >
+            <IoSettingsOutline className="text-lg" />
+            <span className="py-4 px-2 font-semibold">Settings</span>
+          </motion.button>
 
-            <motion.button
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="hidden md:flex items-center bg-gray-100 rounded-full shadow-md dp hover:bg-blue-100"
-            >
-              <span className="py-4 px-4">
-                <MdOutlineNotifications className="text-lg" />
-              </span>
-            </motion.button>
+          <motion.button
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="hidden md:flex items-center  rounded-full shadow-md  "
+          >
+            <span className="py-4 px-4">
+              <MdOutlineNotifications className="text-lg" />
+            </span>
+          </motion.button>
 
-            <motion.button
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
-              className="hidden md:flex items-center bg-gray-100 rounded-full shadow-md dp hover:bg-blue-100"
-            >
-              <span className="py-4 px-4">
-                <MdOutlinePerson className="text-lg" />
-              </span>
-            </motion.button>
+          <motion.button
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+            className="hidden md:flex items-center  rounded-full shadow-md  "
+          >
+            <span className="py-4 px-4">
+              <MdOutlinePerson className="text-lg" />
+            </span>
+          </motion.button>
 
-            <button
-              className="md:hidden p-2 hover:bg-gray-100 rounded-full"
-              onClick={() => setIsMenuOpen(true)}
-            >
-              <Menu className="w-6 h-6" />
-            </button>
-          </div>
+          <button
+            className="md:hidden p-2 hover: rounded-full"
+            onClick={() => setIsMenuOpen(true)}
+          >
+            <Menu className="w-6 h-6" />
+          </button> */}
         </div>
       </motion.nav>
 
@@ -123,7 +123,7 @@ export default function Navbar() {
         <div className="p-4">
           <button
             onClick={() => setIsMenuOpen(false)}
-            className="p-2 hover:bg-gray-100 rounded-full float-right"
+            className="p-2 hover: rounded-full float-right"
           >
             <X className="w-6 h-6" />
           </button>
@@ -134,7 +134,7 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.1 * index }}
-                className="px-4 py-2 hover:bg-gray-100 rounded-lg cursor-pointer"
+                className="px-4 py-2 hover: rounded-lg cursor-pointer"
                 onClick={() => handleScrollToSection(item.id)}
               >
                 {item.name}
@@ -156,4 +156,4 @@ export default function Navbar() {
       )}
     </>
   );
-};
+}
